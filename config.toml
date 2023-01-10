@@ -1,3 +1,90 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "https://netbytes.space/"
+languageCode = "fr"
+DefaultContentLanguage = "fr"
+title = "NetBytes"
+theme = "hugo.386"
+preserveTaxonomyNames = true
+
+# Config example
+# https://gitlab.com/maxlefou/hugo.386/blob/master/exampleSite/config.toml
+
+[params]
+    # The name to display as main title in the home page
+    mainpagetitle = "LE BIOS"
+
+    # The subtitle to display under the title in the home page
+    mainpagesubtitle = "Bienvenue dans le BIOS !" 
+
+    # The description of your website. It will be displayed in the home page
+    mainpagedesc = "Le BIOS est un site qui documente mes projets découverte et mes avancées dans le monde du développement informatique."
+
+    # The name to display in the copyright section in the footer
+    copyrightname = "Gabin Lanore"
+
+    # The url to use as link in the copyright name in the footer. Leave empty to use none.
+    #copyrighturl = ""
+
+    # Show the "built on Hugo" disclaimer
+    showhugo = true
+
+    # Urls for social networks
+    #facebook = "https://facebook.com"
+    twitter = "https://twitter.com/MsterHuj"
+    linkedin = "https://www.linkedin.com/in/gabinlanore/"
+    github = "https://github.com/msterhuj"
+    #gitlab = "https://gitlab.com"
+
+    # Enables or disables the loading animations. false activates them. Default is false.
+    loadfastload = false
+
+    # Sets the speed for the page loading effect. Default is 1.0.
+    loadspeedfactor = 1.5
+
+    # Enables or disables the second flyby cursor. Default is false.
+    loadonepass = true
+
+[menu]
+  # This displays buttons in the navbar to access your contents
+  [[menu.main]]
+    identifier = "about" # An unique identifier for the button
+    name = "About"       # A display name for the button
+    url = "/about/"      # The path to the content. It can lead to a single page (like here)
+    weight = 10          # A number to order the buttons in the navbar
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "All posts"
+    url = "/post/"       # The path can lead to a content folder too.
+    weight = 20
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+
+
+[privacy]
+
+  [privacy.vimeo]
+    disabled = false
+    simple = true
+
+  [privacy.twitter]
+    disabled = false
+    enableDNT = true
+    simple = true
+
+  [privacy.instagram]
+    disabled = false
+    simple = true
+
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+
+[services]
+
+  [services.instagram]
+    disableInlineCSS = true
+
+  [services.twitter]
+    disableInlineCSS = true

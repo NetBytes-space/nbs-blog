@@ -9,7 +9,8 @@ WORKDIR /site
 
 RUN rm -rvf docker
 
-RUN hugo --minify --enableGitInfo
+RUN hugo --minify 
+# --enableGitInfo
 
 # Build the final image
 FROM nginx:1.23.3

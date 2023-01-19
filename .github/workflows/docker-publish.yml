@@ -12,9 +12,6 @@ on:
 
   workflow_dispatch:
 
-env:
-  IMAGE_NAME: nbs-blog
-
 jobs:
 
   push:
@@ -45,5 +42,5 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: library/$IMAGE_NAME:latest
+          tags: library/nbs-blog:latest
 
